@@ -79,12 +79,15 @@ export function ResumeUpload({
 
   return (
     <div className="space-y-2">
-      <label className="text-sm font-medium">Resume (PDF or DOCX)</label>
+      <label htmlFor="resume-upload" className="text-sm font-medium">
+        Resume (PDF or DOCX)
+      </label>
 
       {!file ? (
         <div
           role="button"
           tabIndex={0}
+          aria-label="Upload resume file. Drag and drop or click to browse. PDF or DOCX up to 10 megabytes."
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") inputRef.current?.click();
           }}
@@ -134,10 +137,12 @@ export function ResumeUpload({
       )}
 
       <input
+        id="resume-upload"
         ref={inputRef}
         type="file"
         accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         className="hidden"
+        aria-label="Choose resume file (PDF or DOCX)"
         onChange={(e) => handleFile(e.target.files?.[0] ?? null)}
         disabled={disabled}
       />

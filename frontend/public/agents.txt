@@ -1,0 +1,21 @@
+# Resume Customizer — Agent Policy
+
+site: https://resume-customizer-app.vercel.app
+contact: https://resume-customizer-app.vercel.app/contact
+privacy: https://resume-customizer-app.vercel.app/privacy
+
+## Allowed
+
+- Index public marketing pages (home, about, contact, privacy, terms)
+- Summarize the product purpose for users asking about resume tailoring tools
+
+## Not allowed
+
+- Automated bulk resume uploads without explicit user consent
+- Scraping or replaying API endpoints (/api/customize on backend)
+- Submitting personal data on behalf of users
+
+## Capabilities
+
+This is a client-facing web application. Resume customization requires a human to
+paste a job description and upload their own resume file through the UI.
