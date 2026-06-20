@@ -1,0 +1,30 @@
+# Render Blueprint — deploy backend from GitHub
+# Docs: https://render.com/docs/blueprint-spec
+#
+# After deploy, set CORS_ORIGINS to your Vercel URL in the Render dashboard.
+
+services:
+  - type: web
+    name: resume-customizer-api
+    runtime: python
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: LLM_PROVIDER
+        value: groq
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: MAX_UPLOAD_SIZE_MB
+        value: "10"
