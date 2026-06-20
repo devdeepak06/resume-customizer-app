@@ -39,18 +39,15 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="bingbot" content="index, follow" />
-        <meta name="yandexbot" content="index, follow" />
-        <meta name="sitemap" content="https://resume-customizer.com/sitemap.xml" />
-        
+        <meta name="yandexbot" content="index, follow" /> 
         <meta property="og:title" content="Resume Customizer | AI-powered resume customization" />
         <meta property="og:description" content="Tailor your resume to any job description using AI-powered customization. Upload your resume and job description, and get a customized version of your resume that is tailored to the job description." />
-        <meta property="og:image" content="https://resume-customizer.com/og-image.png" />
-        <meta property="og:url" content="https://resume-customizer.com" />
+        <meta property="og:url" content="https://resume-customizer-app.vercel.app" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Resume Customizer" />
-        <meta property="og:image:width" content="1200" />
-        
+        <link rel="canonical" href="https://resume-customizer-app.vercel.app" />
+
       </head>
       <body className="min-h-full flex flex-col">{children}
         <Analytics />
