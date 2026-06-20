@@ -1,0 +1,27 @@
+# Resume Customizer
+
+> AI-powered web app that tailors your resume to any job description.
+
+Resume Customizer helps job seekers paste a job description, upload a resume (PDF or DOCX),
+and receive a customized version with semantic ATS match scoring, matched keywords,
+missing keyword suggestions, and downloadable results.
+
+## Main URLs
+
+- Home: https://resume-customizer-app.vercel.app/
+- About: https://resume-customizer-app.vercel.app/about
+- Contact: https://resume-customizer-app.vercel.app/contact
+- Privacy Policy: https://resume-customizer-app.vercel.app/privacy
+- Terms of Service: https://resume-customizer-app.vercel.app/terms
+
+## What this site does
+
+- Parses PDF and DOCX resumes
+- Compares resume content to job descriptions using semantic ATS analysis
+- Rewrites summary, skills, and experience bullets to match the role
+- Returns match score, matched keywords, and improvement tips
+
+## Optional
+
+- robots.txt: https://resume-customizer-app.vercel.app/robots.txt
+- sitemap: https://resume-customizer-app.vercel.app/sitemap.xml
