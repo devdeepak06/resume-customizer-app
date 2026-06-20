@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Resume Customizer",
+  title: "Resume Customizer | AI-powered resume customization",
   description:
-    "Tailor your resume to any job description using AI-powered customization.",
+    "Tailor your resume to any job description using AI-powered customization. Upload your resume and job description, and get a customized version of your resume that is tailored to the job description.",
 };
 
 export default function RootLayout({
@@ -32,12 +32,25 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="keywords" content="resume, customizer, ai, job description, customization" />
+        <meta name="title" content="Resume Customizer | AI-powered resume customization" />
+        <meta name="description" content="Tailor your resume to any job description using AI-powered customization. Upload your resume and job description, and get a customized version of your resume that is tailored to the job description." />
         <meta name="author" content="Resume Customizer" />
+        <meta name="publisher" content="Resume Customizer" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="bingbot" content="index, follow" />
         <meta name="yandexbot" content="index, follow" />
         <meta name="sitemap" content="https://resume-customizer.com/sitemap.xml" />
+        
+        <meta property="og:title" content="Resume Customizer | AI-powered resume customization" />
+        <meta property="og:description" content="Tailor your resume to any job description using AI-powered customization. Upload your resume and job description, and get a customized version of your resume that is tailored to the job description." />
+        <meta property="og:image" content="https://resume-customizer.com/og-image.png" />
+        <meta property="og:url" content="https://resume-customizer.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Resume Customizer" />
+        <meta property="og:image:width" content="1200" />
+        
       </head>
       <body className="min-h-full flex flex-col">{children}
         <Analytics />
